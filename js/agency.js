@@ -30,11 +30,17 @@ $("#intro").click(function() {
         scrollTop: $("#services").offset().top
     }, 1500, 'easeInOutExpo');
 });
+$('#intro a').click( function(e) {
+    e.stopPropagation();
+});
 
 $("#services").click(function() {
     $('html, body').animate({
         scrollTop: $("#portfolio").offset().top
     }, 1500, 'easeInOutExpo');
+});
+$('#services a').click( function(e) {
+    e.stopPropagation();
 });
 
 $("#portfolio").click(function() {
@@ -42,11 +48,17 @@ $("#portfolio").click(function() {
         scrollTop: $("#about").offset().top
     }, 1500, 'easeInOutExpo');
 });
+$('#portfolio a').click( function(e) {
+    e.stopPropagation();
+});
 
 $("#about").click(function() {
     $('html, body').animate({
         scrollTop: $("#team").offset().top
     }, 1500, 'easeInOutExpo');
+});
+$('#about a').click( function(e) {
+    e.stopPropagation();
 });
 
 $("#team").click(function() {
@@ -54,3 +66,9 @@ $("#team").click(function() {
         scrollTop: $("#contact").offset().top
     }, 1500, 'easeInOutExpo');
 });
+$('#team a').click( function(e) {
+    e.stopPropagation();
+});
+
+
+
