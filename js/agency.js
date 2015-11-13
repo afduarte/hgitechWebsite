@@ -33,16 +33,21 @@ $("#intro").click(function() {
 $('#intro a').click( function(e) {
     e.stopPropagation();
 });
-
+/* SKIP PORTFOLIO
 $("#services").click(function() {
     $('html, body').animate({
         scrollTop: $("#portfolio").offset().top
+    }, 1500, 'easeInOutExpo');
+});*/
+$("#services").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#about").offset().top
     }, 1500, 'easeInOutExpo');
 });
 $('#services a').click( function(e) {
     e.stopPropagation();
 });
-
+/*
 $("#portfolio").click(function() {
     $('html, body').animate({
         scrollTop: $("#about").offset().top
@@ -50,7 +55,7 @@ $("#portfolio").click(function() {
 });
 $('#portfolio a').click( function(e) {
     e.stopPropagation();
-});
+});*/
 
 $("#about").click(function() {
     $('html, body').animate({
